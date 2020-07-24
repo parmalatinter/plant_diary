@@ -2,3 +2,6 @@
 
 #毎時00分 7時から17時にプログラムを実行
 0 7-17 * * * python /home/pi/Documents/git/plant_diary/camera.py >> /home/pi/Documents/git/plant_diary/exec.log 2>&1
+
+#毎時1分にプログラムを実行する
+# */1 * * * * python /home/pi/Documents/git/plant_diary/camera.py >> /home/pi/Documents/git/plant_diary/exec.log 2>&1
