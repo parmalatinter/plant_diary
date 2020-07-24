@@ -4,6 +4,9 @@
 
 https://qiita.com/Higemal/items/5a579b2701ef7c473062
 
+## Rapberry PiでSamba設定をして、ファイル共有する
+https://www.raspberrypirulo.net/entry/samba
+
 ## スケジュールされているか確認
 crontab -l
 
