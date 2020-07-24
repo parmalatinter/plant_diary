@@ -20,4 +20,6 @@ sudo /etc/init.d/cron restart
 ## log 
 tail -f /var/log/cron.log
 
+## Cronのステータス確認
+sudo /etc/init.d/cron status
 
