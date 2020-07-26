@@ -1,0 +1,30 @@
+sudo apt install pigpio python3-pigpio
+sudo systemctl enable pigpiod.service    # ラズパイ再起動時に pigpiod を自動的に起動させます
+sudo systemctl start pigpiod             # いますぐ pigpiod を起動
+
+https://qiita.com/takjg/items/e6b8af53421be54b62c9
+
+python3 irrp.py -r -g18 -f codes tv:on --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes tv:off --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes light:on --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes light:off --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes aircon:on --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes aircon:off --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes fan:on --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes fan:off --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes fan:up --no-confirm --post 130
+python3 irrp.py -r -g18 -f codes fan:down --no-confirm --post 130
+
+echo 'm 17 w   w 17 0   m 18 r   pud 18 u' > /dev/pigpio
+
+cd /home/pi/Documents/git/plant_diary
+python3 irrp.py -p -g17 -f codes aircon:off
+python3 irrp.py -p -g17 -f codes aircon:on
+python3 irrp.py -p -g17 -f codes tv:off
+python3 irrp.py -p -g17 -f codes tv:on
+python3 irrp.py -p -g17 -f codes light:off
+python3 irrp.py -p -g17 -f codes light:on
+python3 irrp.py -p -g17 -f codes fan:off
+python3 irrp.py -p -g17 -f codes fan:on
+python3 irrp.py -p -g17 -f codes fan:up
+python3 irrp.py -p -g17 -f codes fan:down
