@@ -28,3 +28,12 @@ python3 irrp.py -p -g17 -f codes fan:off
 python3 irrp.py -p -g17 -f codes fan:on
 python3 irrp.py -p -g17 -f codes fan:up
 python3 irrp.py -p -g17 -f codes fan:down
+
+
+https://pcmanabu.com/raspberry-pi4-webserver/
+
+nginxを起動
+sudo /etc/init.d/nginx start
+
+site
+192.168.10.121

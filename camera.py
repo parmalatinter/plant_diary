@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ref: https://stackoverflow.com/questions/34588464/python-how-to-capture-image-from-webcam-on-click-using-opencv
 import sys
 import cv2
