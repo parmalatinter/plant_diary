@@ -26,3 +26,9 @@ tail -f /var/log/cron.log
 ## Cronのステータス確認
 sudo /etc/init.d/cron status
 
+
+## google home
+server/google-home-notifier/node example.js
+
+## express
+server/nodemon index.js
