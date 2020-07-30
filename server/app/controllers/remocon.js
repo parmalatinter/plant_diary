@@ -6,6 +6,8 @@ exports.aircon_on    = (req, res) => res.render('pages/remocon', remocon.aircon_
 exports.aircon_off    = (req, res) => res.render('pages/remocon', remocon.aircon_off(req));
 exports.light_on    = (req, res) => res.render('pages/remocon', remocon.light_on(req));
 exports.light_off    = (req, res) => res.render('pages/remocon', remocon.light_off(req));
+exports.all_on    = (req, res) => res.render('pages/remocon', remocon.all_on(req));
+exports.all_off    = (req, res) => res.render('pages/remocon', remocon.all_off(req));
 // exports.tv_on    = (req, res) => res.render('pages/remocon', aquos.tv_on(req));
 // exports.tv_off    = (req, res) => res.render('pages/remocon', aquos.tv_off(req));
 // exports.tv_channel_down    = (req, res) => res.render('pages/remocon', aquos.tv_channel_down(req));

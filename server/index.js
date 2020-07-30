@@ -40,6 +40,7 @@ app
     })
     .use('/', require('./app/routes/index'))
     .use('/remocon', require('./app/routes/remocon'))
+    .use('/climate', require('./app/routes/climate'))
     .use('/ajax', require('./app/routes/ajax'))
     .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
@@ -48,4 +49,52 @@ process.on('uncaughtException', function(e) {
   console.log("Process will restart now.");
   //process.nextTick(() => stream.destroy());
   //exec("npm restart");
-})
+});
+
+const admin = require("firebase-admin");
+
+const serviceAccount = require("./home-iot.json");
+
+const remocon = require("./app/libs/remocon");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://home-iot-5cfa9.firebaseio.com"
+});
+
+const db = admin.database();
+const ref = db.ref("googlehome");
+
+const airconRef = ref.child("aircon/power");
+const lightRef = ref.child("light/power");
+
+lightRef.on("value", function(snapshot) {
+    console.log("Success");
+    console.log("value Changed!!!");
+    console.log(snapshot.val());
+    if(snapshot.val() == "on"){
+        remocon.light_on();
+    }
+    if(snapshot.val() == "off"){
+        remocon.light_off();
+    }   
+}, 
+function(errorObject) {
+    console.log("failed: " + errorObject.code);
+} );
+
+airconRef.on("value", function(snapshot) {
+    console.log("Success");
+    console.log("value Changed!!!");
+    console.log(snapshot.val());
+    if(snapshot.val() == "on"){
+        remocon.aircon_on();
+    }
+    if(snapshot.val() == "off"){
+        remocon.aircon_off();
+    }   
+}, 
+function(errorObject) {
+    console.log("failed: " + errorObject.code);
+} );
+
