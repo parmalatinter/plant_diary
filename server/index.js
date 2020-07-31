@@ -65,22 +65,40 @@ admin.initializeApp({
 const db = admin.database();
 const ref = db.ref("googlehome");
 
+const allRef = ref.child("all/power");
 const airconRef = ref.child("aircon/power");
 const lightRef = ref.child("light/power");
 const climaRef = ref.child("clima/power");
 const keyRef = ref.child("key/power");
 const ps4Ref = ref.child("ps4/word");
 
+allRef.on("value", function(snapshot) {
+    console.log("Success");
+    console.log("value Changed!!!");
+    console.log(snapshot.val());
+    if(snapshot.val().trim() == "on"){
+        remocon.all_on();
+    }
+    if(snapshot.val().trim() == "off"){
+        remocon.all_off();
+    }
+    ref.child("all").set({"power": ""});
+}, 
+function(errorObject) {
+    console.log("failed: " + errorObject.code);
+} );
+
 lightRef.on("value", function(snapshot) {
     console.log("Success");
     console.log("value Changed!!!");
     console.log(snapshot.val());
-    if(snapshot.val() == "on"){
+    if(snapshot.val().trim() == "on"){
         remocon.light_on();
     }
-    if(snapshot.val() == "off"){
+    if(snapshot.val().trim() == "off"){
         remocon.light_off();
-    }   
+    }
+    ref.child("light").set({"power": ""});
 }, 
 function(errorObject) {
     console.log("failed: " + errorObject.code);
@@ -90,12 +108,13 @@ airconRef.on("value", function(snapshot) {
     console.log("Success");
     console.log("value Changed!!!");
     console.log(snapshot.val());
-    if(snapshot.val() == "on"){
+    if(snapshot.val().trim() == "on"){
         remocon.aircon_on();
     }
-    if(snapshot.val() == "off"){
+    if(snapshot.val().trim() == "off"){
         remocon.aircon_off();
-    }   
+    }
+    ref.child("aircon").set({"power": ""});
 }, 
 function(errorObject) {
     console.log("failed: " + errorObject.code);
@@ -106,6 +125,7 @@ climaRef.on("value", function(snapshot) {
     console.log("value Changed!!!");
     console.log(snapshot.val());
     climate.climateSay(); 
+    ref.child("clima").set({"power": ""});
 }, 
 function(errorObject) {
     console.log("failed: " + errorObject.code);
@@ -115,7 +135,8 @@ keyRef.on("value", function(snapshot) {
     console.log("Success");
     console.log("value Changed!!!");
     console.log(snapshot.val());
-    googlehome.say("やるじゃん！"); 
+    googlehome.say("やるじゃん！");
+    ref.child("key").set({"power": ""});
 }, 
 function(errorObject) {
     console.log("failed: " + errorObject.code);
@@ -170,10 +191,10 @@ ps4Ref.on("value", function(changedSnapshot) {
   //値取得
   const value = changedSnapshot.val();
   if (value["word"]) {
-    console.log(1, value["word"]);
+    console.log(1, value["word"].trim());
 
     //コマンド生成
-    const command = getJsonData(value["word"]);
+    const command = getJsonData(value["word"].trim());
 
     //コマンド実行
     if (command) {
@@ -186,3 +207,4 @@ ps4Ref.on("value", function(changedSnapshot) {
 
   }
 });
+

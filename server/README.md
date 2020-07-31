@@ -18,6 +18,8 @@ forever start -c nodemon index.js
 forever list
 forever restart 0
 
+lsof -i :5000
+kill -9 PID
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
