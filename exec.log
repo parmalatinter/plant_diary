@@ -10,3 +10,364 @@
 /home/pi/Documents/git/plant_diary/20200724/opencv_frame_20200724165305.png written!
 /home/pi/Documents/git/plant_diary/20200724/opencv_frame_20200724165405.png written!
 /home/pi/Documents/git/plant_diary/20200724/opencv_frame_20200724165505.png written!
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 5, in <module>
+    import cv2
+  File "/home/pi/.local/lib/python3.7/site-packages/cv2/__init__.py", line 3, in <module>
+    from .cv2 import *
+ImportError: /home/pi/.local/lib/python3.7/site-packages/cv2/cv2.cpython-37m-arm-linux-gnueabihf.so: undefined symbol: __atomic_fetch_add_8
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 5, in <module>
+    import cv2
+  File "/home/pi/.local/lib/python3.7/site-packages/cv2/__init__.py", line 3, in <module>
+    from .cv2 import *
+ImportError: /home/pi/.local/lib/python3.7/site-packages/cv2/cv2.cpython-37m-arm-linux-gnueabihf.so: undefined symbol: __atomic_fetch_add_8
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725080302.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725081040.png written!
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 5, in <module>
+    import cv2
+  File "/home/pi/.local/lib/python3.7/site-packages/cv2/__init__.py", line 3, in <module>
+    from .cv2 import *
+ImportError: /home/pi/.local/lib/python3.7/site-packages/cv2/cv2.cpython-37m-arm-linux-gnueabihf.so: undefined symbol: __atomic_fetch_add_8
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725092537.png written!
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 5, in <module>
+    import cv2
+ImportError: No module named cv2
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 5, in <module>
+    import cv2
+ImportError: No module named cv2
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725093304.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725093404.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725100004.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725110004.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725120005.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725130004.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725140004.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725150005.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725160004.png written!
+/home/pi/Documents/git/plant_diary/20200725/opencv_frame_20200725170006.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726070009.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726080004.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726090004.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726100005.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726110004.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726120006.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726130004.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726140006.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726150004.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726160005.png written!
+/home/pi/Documents/git/plant_diary/20200726/opencv_frame_20200726170004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727070009.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727080005.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727090004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727100004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727110005.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727120004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727130004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727140005.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727150004.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727160131.png written!
+/home/pi/Documents/git/plant_diary/20200727/opencv_frame_20200727170006.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728070007.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728080005.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728090004.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728100004.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728110005.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728120004.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728130005.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728140004.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728150004.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728160005.png written!
+/home/pi/Documents/git/plant_diary/20200728/opencv_frame_20200728170004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729070004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729080004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729090004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729100004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729110005.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729120004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729130004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729140004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729150005.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729160004.png written!
+/home/pi/Documents/git/plant_diary/20200729/opencv_frame_20200729170004.png written!
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730070005.png written!
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730080004.png written!
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730090004.png written!
+python3: can't open file '/home/pi/Documents/git/plant_diary/server/climate.py': [Errno 2] No such file or directory
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730100009.png written!
+{ temp: 29, humidity: 67 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730110006.png written!
+{ temp: 29, humidity: 68 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730120005.png written!
+{ temp: 29, humidity: 67 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730130007.png written!
+{ temp: 30, humidity: 66 }
+undefined
+{ temp: 30, humidity: 65 }
+{ temp: 30, humidity: 66, created_datetime: '2020-07-30 13:07' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730131127.png written!
+{ temp: 30, humidity: 65 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730140005.png written!
+{ temp: 30, humidity: 65 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730150005.png written!
+{ temp: 29, humidity: 57 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730160005.png written!
+{ temp: 29, humidity: 55 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730170005.png written!
+/home/pi/Documents/git/plant_diary/20200730/opencv_frame_20200730184320.png written!
+{ temp: 29, humidity: 55 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731070006.png written!
+{ temp: 28, humidity: 76 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731080005.png written!
+{ temp: 28, humidity: 76 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731090005.png written!
+{ temp: 28, humidity: 57 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+{ temp: 28, humidity: 56 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+{ temp: 28, humidity: 57 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xac24fc50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac24fc50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 62, in google_say
+    response = requests.post('http://localhost:8091/google-home-notifier', data={'text': text})
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac24fc50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731121958.png written!
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xac252bb0>: Failed to establish a new connection: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac252bb0>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 62, in google_say
+    response = requests.post('http://localhost:8091/google-home-notifier', data={'text': text})
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac252bb0>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731121959.png written!
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xac193c50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac193c50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/Documents/git/plant_diary/camera.py", line 62, in google_say
+    response = requests.post('http://localhost:8091/google-home-notifier', data={'text': text})
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8091): Max retries exceeded with url: /google-home-notifier (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xac193c50>: Failed to establish a new connection: [Errno 111] 接続を拒否されました'))
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731122001.png written!
+{ temp: 28, humidity: 58 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731130005.png written!
+{ temp: 28, humidity: 55 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731140006.png written!
+{ temp: 28, humidity: 54 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731150005.png written!
+{ temp: 26, humidity: 51 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731160005.png written!
+{ temp: 26, humidity: 50 }
+{ temp: 30,
+  humidity: 62,
+  created_datetime: '2020-07-30 10:01:51.000' }
+/home/pi/Documents/git/plant_diary/20200731/opencv_frame_20200731170006.png written!

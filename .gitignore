@@ -64,3 +64,6 @@ server/google-home-notifier/.yarn-integrity
 # google setting
 server/home-iot.json
 
+2020*/
+
+__pycache__/

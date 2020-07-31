@@ -5,7 +5,11 @@ import sys
 import cv2
 from datetime import datetime
 import os
- 
+import rgb_lcd
+import temperature_humidity_sensor
+import time,sys
+import requests
+
 os.environ['DISPLAY'] = ':0'
 
 def capture_camera():
@@ -45,6 +49,24 @@ def ensure_dir(intdate):
         # directory already exists
         pass
     return path
-    
+
+def lcd_show(text):
+    rgb_lcd.setText(text)
+    rgb_lcd.setRGB(0,128,64)
+    time.sleep(5)
+    rgb_lcd.setRGB(0,0,0)
+    rgb_lcd.setText("")
+
+def google_say(text):
+    try:
+        response = requests.post('http://localhost:8091/google-home-notifier', data={'text': text})
+    except:
+        import traceback
+        traceback.print_exc()
+
 if __name__ == '__main__':
     capture_camera()
+    lcd_show("Finish capture\n" + datetime.now().strftime('%Y/%m/%d %H:%M:%S'))
+    clima = temperature_humidity_sensor.get_clima()
+    lcd_show("Temp :" + str(clima["temp"]) + "\nhum :" + str(clima["humidity"]))
+    google_say('キャプチャが完了しました')

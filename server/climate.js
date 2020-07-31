@@ -10,7 +10,7 @@ climate.climate().then(result => {
 								console.log( result);
 
 								var now_date = new Date();
-								var date_str = now_date.toFormat("YYYY-MM-DD HH24:MI:SS.000"); // data-utilsモジュールでの拡張を利用。
+								var date_str = now_date.toFormat("YYYY-MM-DD HH24:MM"); // data-utilsモジュールでの拡張を利用。
 
 								db.serialize(function() {
 

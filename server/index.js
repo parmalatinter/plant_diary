@@ -52,10 +52,10 @@ process.on('uncaughtException', function(e) {
 });
 
 const admin = require("firebase-admin");
-
 const serviceAccount = require("./home-iot.json");
-
 const remocon = require("./app/libs/remocon");
+const climate = require("./app/libs/climate");
+const googlehome = require("./app/libs/googlehome");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -67,6 +67,9 @@ const ref = db.ref("googlehome");
 
 const airconRef = ref.child("aircon/power");
 const lightRef = ref.child("light/power");
+const climaRef = ref.child("clima/power");
+const keyRef = ref.child("key/power");
+const ps4Ref = ref.child("ps4/word");
 
 lightRef.on("value", function(snapshot) {
     console.log("Success");
@@ -98,3 +101,88 @@ function(errorObject) {
     console.log("failed: " + errorObject.code);
 } );
 
+climaRef.on("value", function(snapshot) {
+    console.log("Success");
+    console.log("value Changed!!!");
+    console.log(snapshot.val());
+    climate.climateSay(); 
+}, 
+function(errorObject) {
+    console.log("failed: " + errorObject.code);
+} );
+
+keyRef.on("value", function(snapshot) {
+    console.log("Success");
+    console.log("value Changed!!!");
+    console.log(snapshot.val());
+    googlehome.say("やるじゃん！"); 
+}, 
+function(errorObject) {
+    console.log("failed: " + errorObject.code);
+} );
+
+//jsonからvalueに一致する値取得
+const option =  {
+          "起動": " ",
+          "オン": " ",
+          "スタート": " ",
+          "スタンバイ": "standby",
+          "停止": "standby",
+          "オフ": "standby",
+          "ストップ": "standby",
+          "ホーム": "remote ps",
+          "フォーム": "remote ps",
+          "メニュー": "remote ps",
+          "エンター": "remote enter",
+          "センター": "remote enter",
+          "選択": "remote enter",
+          "バック": "remote back",
+          "戻る": "remote back",
+          "戻って": "remote back",
+          "オプション": "remote options",
+          "上": "remote up",
+          "笛": "remote up",
+          "うえ": "remote up",
+          "下": "remote down",
+          "した": "remote down",
+          "左": "remote left",
+          "右": "remote right",
+          "トルネ": "start CUSA00442",
+          "とる": "start CUSA00442",
+          "メディア": "start CUSA02012",
+          "default": false
+        };
+
+const command = "sudo ps4-waker ";
+
+function getJsonData(value) {
+    try{
+        console.log(option[value]);
+        return option[value] ? command + option[value] : option["default"];
+    }catch(ex){
+        console.log(ex);
+        console.log(2);
+        return option["default"];
+    }
+}
+
+ps4Ref.on("value", function(changedSnapshot) {
+  //値取得
+  const value = changedSnapshot.val();
+  if (value["word"]) {
+    console.log(1, value["word"]);
+
+    //コマンド生成
+    const command = getJsonData(value["word"]);
+
+    //コマンド実行
+    if (command) {
+      const exec = require('child_process').exec;
+      exec(command);
+      console.log(command);
+      //firebase clear
+      ref.child("ps4").set({"word": ""});;
+    }
+
+  }
+});
